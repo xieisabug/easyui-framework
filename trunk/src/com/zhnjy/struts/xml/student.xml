@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="student" namespace="/" extends="struts-default">
+
+
+		<action name="*Student" class="com.zhnjy.action.StudentAction"
+			method="{1}">
+
+			<result name="downloadAllSuccess" type="stream">
+				<param name="contentType"> application/vnd.ms-excel</param>
+				<param name="inputName">inputStream</param>
+				<param name="contentDisposition">attachment;filename="${fileName}"</param>
+				<param name="bufferSize">4096</param>
+			</result>
+
+			<result  name="downloadSomeSuccess" type="stream">
+				<param name="contentType"> application/vnd.ms-excel</param>
+				<param name="inputName">inputStream</param>
+				<param name="contentDisposition">attachment;filename="${fileName}"</param>
+				<param name="bufferSize">4096</param>
+			</result>
+			
+			<result name="addsuccess">/manage_jsp/add_stu_selectable.jsp</result>
+			<result name="addfail">/manage_jsp/fail.jsp</result>
+
+			<result name="updatesuccess">/manage_jsp/success.jsp </result>
+			<result name="updatefail">/manage_jsp/fail.jsp</result>
+
+			<result name="deletesuccess">/manage_jsp/success_result.html </result>
+			<result name="deletefail">/manage_jsp/fail_result.html </result>
+
+			<result name="updateselectsuccess">/manage_jsp/add_stu_photo.jsp </result>
+			<result name="updateselectfail">/manage_jsp/fail.jsp  </result>
+
+			<result name="printsuccess">/manage_jsp/success.jsp</result>
+
+			<result name="getStudentsSuccess">/show_data_jsp/get_stu.jsp </result>
+		</action>
+	</package>
+
+</struts>
