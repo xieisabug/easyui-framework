@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="photo" namespace="/" extends="struts-default">
+		<action name="*Photo" class="com.zhnjy.action.PhotoAction"
+			method="{1}">
+
+			<param name="path">/photos</param><!-- 照片保存文件路径 -->
+			<result name="uploadsuccess">/show_data_jsp/show_stu_photo.jsp</result>
+			<result name="uploadfail">/manage_jsp/add_stu_photo.jsp </result>
+
+			<result name="deletesuccess">/manage_jsp/success_result.html </result>
+			<result name="deletefail">/manage_jsp/fail_result.html </result>
+
+			<result name="updatesuccess">/manage_jsp/success.jsp </result>
+			<result name="updatefail">/manage_jsp/fail.jsp </result>
+
+			<result name="querysuccess">/temp.jsp </result>
+			<result name="queryfail">/temp.jsp </result>
+
+		</action>
+	</package>
+
+</struts>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<constant name="struts.devMode" value="false" />
+	<!-- 解决中文乱码问题 -->
+	<constant name="struts.i18n.encoding" value="utf-8" />
+	<!-- 引入相应功能的配置文件 -->
+	<include file="com/zhnjy/struts/xml/login.xml" />
+	<include file="com/zhnjy/struts/xml/student.xml" />
+	<include file="com/zhnjy/struts/xml/admin.xml" />
+	<include file="com/zhnjy/struts/xml/major.xml" />
+	<include file="com/zhnjy/struts/xml/grade.xml" />
+	<include file="com/zhnjy/struts/xml/message.xml" />
+	<include file="com/zhnjy/struts/xml/register.xml" />
+	<include file="com/zhnjy/struts/xml/school.xml" />
+	<include file="com/zhnjy/struts/xml/course.xml" />
+	<include file="com/zhnjy/struts/xml/site.xml" />
+	<include file="com/zhnjy/struts/xml/photo.xml" />
+	<include file="com/zhnjy/struts/xml/exam.xml" />
+	<include file="com/zhnjy/struts/xml/majorcourse.xml" />
+	<include file="com/zhnjy/struts/xml/schoolmajor.xml" />
+	<include file="com/zhnjy/struts/xml/examset.xml" />
+	<include file="com/zhnjy/struts/xml/selectcourse.xml" />
+	<include file="com/zhnjy/struts/xml/singlecount.xml" />
+	<include file="com/zhnjy/struts/xml/recorditem.xml" />
+	<include file="com/zhnjy/struts/xml/record.xml" />
+	<include file="com/zhnjy/struts/xml/graduate.xml" />
+	<include file="com/zhnjy/struts/xml/welcome.xml" />
+</struts>
