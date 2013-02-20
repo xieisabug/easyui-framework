@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<set>
+	<unitNum>6</unitNum>
+	<unitTime>
+		<day name="1">
+			<date>4月19日</date>
+			<unit1>
+				9:00-11:30
+			</unit1>
+			<unit2>
+				2:00-4:30
+			</unit2>
+		</day>
+		<day name="2">
+			<date>4月20日</date>
+			<unit1>
+				9:00-11:30
+			</unit1>
+			<unit2>
+				2:00-4:30
+			</unit2>
+		</day>
+		<day name="3">
+			<date>4月21日</date>
+			<unit1>
+				9:00-11:30
+			</unit1>
+			<unit2>
+				2:00-4:30
+			</unit2>
+		</day>
+	</unitTime>
+</set>

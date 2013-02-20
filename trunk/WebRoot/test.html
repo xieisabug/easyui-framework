@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test.html</title>
+
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="/zk/easyui/themes/icon.css" type="text/css" />
+<link rel="stylesheet" href="/zk/easyui/themes/default/easyui.css"
+	type="text/css" />
+<script type="text/javascript" src="/zk/jBox/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/zk/easyui/jquery.form.js"></script>
+<script type="text/javascript" src="/zk/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/zk/js/app/datagrid.js"></script>
+<script type="text/javascript">
+	$(function() {
+		createDatagrid({
+			id : '#test',
+			type : 'Variable',
+			action : '/zk/bacs',
+			columns : [ [ {
+				field : 'itemid',
+				title : 'Item ID',
+				width : 80
+			}, {
+				field : 'productid',
+				title : 'Product ID',
+				width : 120
+			}, {
+				field : 'listprice',
+				title : '价格',
+				width : 80,
+				align : 'right'
+			}, {
+				field : 'unitcost',
+				title : '单元',
+				width : 80,
+				align : 'right',
+				hidden : true
+			}, {
+				field : 'attr1',
+				title : '属性',
+				width : 250
+			}, {
+				field : 'status',
+				title : '状态',
+				width : 60,
+				align : 'center'
+			} ] ],
+			data : {}
+		});
+	});
+</script>
+</head>
+
+<body>
+	<table id="test"></table>
+</body>
+</html>
