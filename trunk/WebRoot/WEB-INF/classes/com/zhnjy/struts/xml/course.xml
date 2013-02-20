@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="course" namespace="/" extends="struts-default">
+        <action name="*Course" class="com.zhnjy.action.CourseAction" method="{1}">
+        
+            <result name="addsuccess">/manage_jsp/success.jsp </result>
+           <result name="addfail">/manage_jsp/fail.jsp  </result> 
+           
+           <result name="updatesuccess">/manage_jsp/success.jsp</result>
+           <result name="updatefail">/manage_jsp/fail.jsp</result>
+           
+           <result name="deletesuccess">/manage_jsp/success_result.html </result>
+           <result name="deletefail">/manage_jsp/fail_result.html </result> 
+
+		  <result name="getCoursesSuccess">/show_data_jsp/get_course.jsp</result>
+        </action>
+    </package>
+
+</struts>

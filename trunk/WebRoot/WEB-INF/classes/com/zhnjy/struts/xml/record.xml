@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="record" namespace="/" extends="struts-default">
+        <action name="*R" class="com.zhnjy.action.RecordAction" method="{1}">
+        
+            <result name="addsuccess">/manage_jsp/success.jsp </result>
+           <result name="addfail">/manage_jsp/fail.jsp  </result> 
+           
+           <result name="updatesuccess">/manage_jsp/success.jsp</result>
+           <result name="updatefail">/manage_jsp/fail.jsp</result>
+           
+           <result name="deletesuccess">/manage_jsp/success_result.html </result>
+           <result name="deletefail">/manage_jsp/fail_result.html </result> 
+
+			<result name="downloadSuccess" type="stream">
+				<param name="contentType"> application/vnd.ms-excel</param>
+				<param name="inputName">inputStream</param>
+				<param name="contentDisposition">attachment;filename="${fileName}"</param>
+				<param name="bufferSize">4096</param>
+			</result>
+
+        </action>
+    </package>
+
+</struts>

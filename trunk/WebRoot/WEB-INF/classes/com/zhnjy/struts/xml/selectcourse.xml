@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="selectcourse" namespace="/" extends="struts-default">
+        <action name="*SC" class="com.zhnjy.action.SelectCourseAction" method="{1}">  
+        	<result name="getdatesuccess">/stu_chooseclass.jsp</result>
+        	<result name="getSelectsSuccess">/show_data_jsp/get_selectcourse.jsp</result>
+        	<result name="addsuccess">/manage_jsp/success.jsp</result> 
+        	<result name="addfail">/manage_jsp/fail.jsp </result> 
+        	     
+        </action>
+    </package>
+
+</struts>
