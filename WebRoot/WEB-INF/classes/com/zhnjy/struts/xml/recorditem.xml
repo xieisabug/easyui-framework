@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="recorditem" namespace="/" extends="struts-default">
+        <action name="*RecordItem" class="com.zhnjy.action.RecordItemAction" method="{1}">
+        
+            <result name="addsuccess">/manage_jsp/success.jsp </result>
+           <result name="addfail">/manage_jsp/fail.jsp  </result> 
+           
+           <result name="updatesuccess">/manage_jsp/success.jsp</result>
+           <result name="updatefail">/manage_jsp/fail.jsp</result>
+           
+           <result name="deletesuccess">/manage_jsp/success_result.html </result>
+           <result name="deletefail">/manage_jsp/fail_result.html </result> 
+
+			<result name="querysuccess">/show_data_jsp/get_recorditem.jsp </result>
+			<result name="updatebeforesuccess">/finance_jsp/update_recorditem.jsp</result>
+        </action>
+    </package>
+
+</struts>

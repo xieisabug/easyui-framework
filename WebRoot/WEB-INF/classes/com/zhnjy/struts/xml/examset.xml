@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="ES" namespace="/" extends="struts-default">
+		<action name="*ES" class="com.zhnjy.action.ExamSetAction"
+			method="{1}">
+			<result name="examdatesuccess">exam_set.jsp </result>
+			<result name="unitnumsuccess">exam_set.jsp</result>
+			<result name="unittimesuccess">exam_set.jsp </result>
+			<result name="readsuccess">exam_set.jsp</result>
+		</action>
+	</package>
+
+</struts>
