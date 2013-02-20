@@ -1,0 +1,63 @@
+body {
+	width: 100%;
+	height: 100%;
+	background: #fafafa;
+	margin: 0 auto;
+	padding: 0px;
+}
+
+p {
+	font-size: 15px;
+	font-weight: bold;
+	color: #777777;
+}
+
+#backimg {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	background: url("/zk/images/welcome.jpg") no-repeat center;
+}
+
+#login {
+	width: 494px;
+	height: 100%;
+	background: url("/zk/images/login.png") no-repeat;
+	float: right;
+}
+
+#login_title {
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+#login_title p {
+	font-size: 40px;
+}
+
+.login_input {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+	-moz-box-shadow: 0px 0px 1px #000000;
+	-webkit-box-shadow: 0px 0px 1px #000000;
+	box-shadow: 0px 0px 1px #000000;
+	/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+	border: 1px solid #cccccc;
+	width: 190px;
+	height: 35px;
+	padding: 5px;
+}
+
+#form {
+	width: 250px;
+	margin: 0 auto;
+	margin-top: 330px;
+	height: 200px;
+}
+
+#input {
+	margin-top: 50px;
+}

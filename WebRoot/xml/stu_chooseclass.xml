@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info>
+	<status></status>//是否在籍。
+	<isPay></isPay>//是否缴费
+	<stuInfo>//学生要显示的信息，全在这里
+		<examNumber></examNumber>
+		<studyForm></studyForm>//助学方式
+		<name></name>
+		<sex></sex>
+		<postCode></postCode>
+		<address></address>
+		<nationality></nationality>//民族
+		<politicalLevel></politicalLevel>//政治面貌
+		<major></major>//需要代码加名字的形式传过来,eg: B20245 计算机科学与技术
+		<idCard></idCard>
+		<phone1></phone1>
+		<phone2></phone2>
+		<email></email>
+		<examDate></examDate>//考期
+	</stuInfo>
+	<examInfo>
+		<day>//这是一天的信息
+			<unit1>//一个单元的信息
+				<html></html>
+			</unit1>
+			<unit2>
+				<html></html>
+			</unit2>
+		</day>
+		<day>//这是一天的信息
+			<unit1>//一个单元的信息
+				<html></html>
+			</unit1>
+			<unit2>
+				<html></html>
+			</unit2>
+		</day>
+		<day>//这是一天的信息
+			<unit1>//一个单元的信息
+				<html></html>
+			</unit1>
+			<unit2>
+				<html></html>
+			</unit2>
+		</day>
+	</examInfo>
+</info>

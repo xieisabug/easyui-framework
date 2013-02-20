@@ -1,0 +1,66 @@
+body {
+	text-align: center;	
+	background: #efefef;
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+	background: url("/zk/images/stu_title.png");
+	margin: 0 auto;
+	width: 884px;
+	height: 191px;
+}
+
+#content {
+	margin: 0;
+	padding: 0;
+}
+
+#allInfo {
+	width: 884px;
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+#message,#stu_info,#study_info {
+	width: 33%;
+	height: 100%;
+	float: left;
+	margin-right: 2px;
+}
+
+#message:hover,#stu_info:hover,#study_info:hover{
+	background: #e0e0e0;
+}
+
+#messageTitle,#stuInfoTitle,#studyInfoTitle {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+#messageTitle {
+	background: url("/zk/images/message.png");
+}
+
+#stuInfoTitle {
+	background: url("/zk/images/stu_info.png");
+}
+
+#studyInfoTitle {
+	background: url("/zk/images/study_info.png");
+}
+
+.infoItem {
+	float: left;
+}
+.infoItem {
+	
+}
+
+#footer {
+	
+}

@@ -1,0 +1,32 @@
+#majorName {
+	height: 100px;
+	width: 150px;
+	float: left;
+	margin: 3px;
+}
+
+#level {
+	height: 100px;
+	width: 150px;
+	float: left;
+	margin: 3px;
+}
+
+#courseContent {
+	width: 100%;
+	display: block;
+}
+
+#courseInput {
+	margin-top: 20px;
+	width: 100%;
+}
+
+#courseNos {
+	font-size: 12px;
+	height: 25px;
+	width: 100%;
+	border: 1px solid #DDD;
+	margin: 3px;
+	padding: 3px 3px 3px 8px;
+}
